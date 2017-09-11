@@ -1,4 +1,4 @@
-## Cisco AMP for Endpoints Splunk ES Integration Add-on development instructions
+## Cisco AMP for Endpoints Splunk CIM Add-on development instructions
 
 Cisco AMP for Endpoints Splunk ES Integration Add-on provides a mechanism to map data from AMP
 data into Splunk Enterprise Security, using the Splunk Common Information Model

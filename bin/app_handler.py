@@ -8,6 +8,7 @@ class ConfigApp(admin.MConfigHandler):
     AMP_HOST_FIELD_NAME   = 'amp_host'
     APP_CONFIG_STANZA     = 'app_config'
     LINK_URI_KEY          = 'link.uri'
+    HTTPS_PROTOCOL        = 'https://'
 
     FIELD_CONNECTOR_GUID = 'event.computer.connector_guid'
     FIELD_GROUP_GUIDS    = 'event.group_guids{}'
@@ -40,6 +41,7 @@ class ConfigApp(admin.MConfigHandler):
 
     def updateWorkflowActions(self, hostName):
         for stanza, url in self.WORKFLOW_ACTIONS.iteritems():
-            self.writeConf(self.WORKFLOW_ACTIONS_CONF, stanza, { self.LINK_URI_KEY: hostName + url })
+            actionUrl = '{0}{1}{2}'.format(self.HTTPS_PROTOCOL, hostName, url)
+            self.writeConf(self.WORKFLOW_ACTIONS_CONF, stanza, { self.LINK_URI_KEY: actionUrl })
 
 admin.init(ConfigApp, admin.CONTEXT_NONE)
