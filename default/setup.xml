@@ -1,8 +1,0 @@
-<setup>
-  <block title="Cisco AMP for Endpoints CIM Add-on configuration" endpoint="appep/conf" entity="app_config">
-    <input field="amp_host">
-      <label>AMP host</label>
-      <type>url</type>
-    </input>
-  </block>
- </setup>

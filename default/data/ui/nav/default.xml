@@ -1,0 +1,3 @@
+<nav search_view="setup_view_dashboard" color="#65A637">
+  <view name="setup_view_dashboard" default='true' />
+</nav>
