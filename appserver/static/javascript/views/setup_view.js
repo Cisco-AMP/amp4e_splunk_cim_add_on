@@ -500,21 +500,11 @@ define(
 
                 if (is_string_empty) {
                     error_message =
-                        "The `API URL` specified was empty. Please provide" + " a value.";
+                        "The `AMP for Endpoitns Console Hostname` specified was empty. Please provide a value.";
                     error_messages.push(error_message);
                 }
                 if (does_string_start_with_http_protocol) {
-                    error_message =
-                        "The `API URL` specified is using `http://` at the" +
-                        " beginning of it. Please remove the `http://` and" +
-                        " enter the url with out it in `API URL` field.";
-                    error_messages.push(error_message);
-                }
-                if (does_string_start_with_https_protocol) {
-                    error_message =
-                        "The `API URL` specified is using `https://` at the" +
-                        " beginning of it. Please remove the `https://` and" +
-                        " enter the url with out it in `API URL` field.";
+                    error_message = 'The hostname should not include the protocol ("http", "https").  This wilil be automatically determined.';
                     error_messages.push(error_message);
                 }
 
