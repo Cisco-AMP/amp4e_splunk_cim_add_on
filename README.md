@@ -18,6 +18,12 @@ Add-on. It also adds some workflow actions for AMP.
 If you've developed a feature, don't hesitate to submit a pull request for review!
 Please make sure your code is properly documented and tested (if needed), as it will facilitate fast reviewing.  
 
+### Publishing
+
+1. Clone the repo in a folder that matches the id in default/app.conf. In our case `TA-cisco-amp4e`. Unfortuntaely, this cannot be changed since Splunkbase will reject if the name has changed.
+2. Install the [package toolkit](https://dev.splunk.com/enterprise/docs/releaseapps/packageapps/packagingtoolkit/)
+3. Run `python -m slim package TA-cisco-amp4e`
+
 ### Authors
 This project was developed by Cisco AMP For Endpoints team
 

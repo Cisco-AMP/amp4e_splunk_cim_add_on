@@ -6,7 +6,7 @@ define(
         sdk = splunk_js_sdk;
         let splunk_js_sdk_service;
 
-        const app_name = "amp4e_splunk_cim_add_on";
+        const app_name = "TA-cisco-amp4e";
 
         const application_name_space = {
             owner: "nobody",
